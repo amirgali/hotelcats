@@ -1,0 +1,128 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: 'Lato', 'Rubik', sans-serif;
+
+  background-color: white;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 206px;
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 63px;
+
+  font-size: 16px;
+  vertical-align: middle;
+  line-height: 19px;
+
+  border-radius: 30px;
+  border: none;
+}
+
+.btn::after {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  top: 7px;
+  right: 7px;
+  background-image: url(../img/main-head-paw.svg);
+  filter: invert(0%);
+}
+
+.header {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1A212F;
+}
+
+.header__wrapper {
+  max-width: 1366px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 12px 98px;
+}
+
+.header__logo {
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header__item {
+  padding-left: 30px;
+}
+
+.main__head {
+  display: block;
+  width: 100%;
+  height: 504px;
+  
+  background: url(../img/main-cat-bg.jpg) no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.main__head__info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 153px;
+  padding-bottom: 153px;
+  padding-left: 60px;
+}
+
+.main__head__address {
+  margin-bottom: 10px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.main__head__name {
+  margin-bottom: 14px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 62px;
+  line-height: 73px;
+}
+
+.main__head__title {
+  margin-bottom: 40px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.main__head__btn {
+  background: #FFFEFD;
+}
