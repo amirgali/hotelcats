@@ -1,7 +1,21 @@
 .rooms {
+	margin-bottom: 140px;
+
+	&__wrapper {
+		position: relative;
+		height: 578px;
+	}
+
 	&__item {
 		display: flex;
-		position: relative;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		z-index: 1;
+		transition: opacity 1s;
 
 		&__title {
 			padding-bottom: 30px;
@@ -75,7 +89,35 @@
 		}
 	}
 }
-.showing {
+
+#slides {
 }
+
+.showing {
+	opacity: 1;
+	z-index: 2;
+}
+
 .btn {
 }
+
+.controls {
+	position: relative;
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.previous::after {
+	position: absolute;
+	content: "";
+	bottom: 100px;
+	right: 100px;
+	width: 36px;
+	height: 36px;
+	background-image: url(../../img/btn.svg);
+}
+// кнопки надо доделать!

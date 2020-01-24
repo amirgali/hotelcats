@@ -76,52 +76,60 @@
 
 
 				<h2 class="rooms__title">Номера</h2>
-				
-				<div class="rooms__item showing">
-					<div class="rooms__image">
-						<img src="img/rooms-cat-01.jpg" alt="Фото кошки" width="600" height="404">
+
+				<div class="rooms__wrapper" id="slides">
+
+					<div class="rooms__item showing">
+						<div class="rooms__image">
+							<img src="img/rooms-cat-01.jpg" alt="Фото кошки" width="600" height="404">
+						</div>
+						<div class="rooms__info">
+							<div class="rooms__item__title">Эконом плюс</div>
+							<ul class="rooms__item__text">
+								<li class="rooms__item__list">Площадь - 0,90 м2</li>
+								<li class="rooms__item__list">Размеры (ШхГхВ) — 90х100х180 см</li>
+								<li class="rooms__item__list">Цена за сутки: 200₽</li>
+							</ul>
+							<button class="rooms__btn btn" type="button">Забронировать</button>
+						</div>
 					</div>
-					<div class="rooms__info">
-						<div class="rooms__item__title">Эконом плюс</div>
-						<ul class="rooms__item__text">
-							<li class="rooms__item__list">Площадь - 0,90 м2</li>
-							<li class="rooms__item__list">Размеры (ШхГхВ) — 90х100х180 см</li>
-							<li class="rooms__item__list">Цена за сутки: 200₽</li>
-						</ul>
-						<button class="rooms__btn btn" type="button">Забронировать</button>
+
+					<div class="rooms__item">
+						<div class="rooms__image">
+							<img src="img/rooms-cat-02.jpg" alt="Фото кошки" width="600" height="404">
+						</div>
+						<div class="rooms__info">
+							<div class="rooms__item__title">Комфорт</div>
+							<ul class="rooms__item__text">
+								<li class="rooms__item__list">Площадь - 1,13 м2</li>
+								<li class="rooms__item__list">Размеры (ШхГхВ) - 100х125х180 см</li>
+								<li class="rooms__item__list">Цена за сутки: 250₽</li>
+							</ul>
+							<button class="rooms__btn btn" type="button">Забронировать</button>
+						</div>
+					</div>
+
+
+					<div class="rooms__item">
+						<div class="rooms__image">
+							<img src="img/rooms-cat-03.jpg" alt="Фото кошки" width="600" height="404">
+						</div>
+						<div class="rooms__info">
+							<div class="rooms__item__title">Сьют</div>
+							<ul class="rooms__item__text">
+								<li class="rooms__item__list">Площадь - 1,56 м2</li>
+								<li class="rooms__item__list">Размеры (ШхГхВ) - 125х125х180 см</li>
+								<li class="rooms__item__list">Цена за сутки: 350₽</li>
+							</ul>
+							<button class="rooms__btn btn" type="button">Забронировать</button>
+						</div>
 					</div>
 				</div>
 
-				
-				<div class="rooms__item">
-					<div class="rooms__image">
-						<img src="img/rooms-cat-01.jpg" alt="Фото кошки" width="600" height="404">
-					</div>
-					<div class="rooms__info">
-						<div class="rooms__item__title">Эконом плюс</div>
-						<ul class="rooms__item__text">
-							<li class="rooms__item__list">Площадь - 0,90 м2</li>
-							<li class="rooms__item__list">Размеры (ШхГхВ) — 90х100х180 см</li>
-							<li class="rooms__item__list">Цена за сутки: 200₽</li>
-						</ul>
-						<button class="rooms__btn btn" type="button">Забронировать</button>
-					</div>
-				</div>
-
-				
-				<div class="rooms__item">
-					<div class="rooms__image">
-						<img src="img/rooms-cat-01.jpg" alt="Фото кошки" width="600" height="404">
-					</div>
-					<div class="rooms__info">
-						<div class="rooms__item__title">Эконом плюс</div>
-						<ul class="rooms__item__text">
-							<li class="rooms__item__list">Площадь - 0,90 м2</li>
-							<li class="rooms__item__list">Размеры (ШхГхВ) — 90х100х180 см</li>
-							<li class="rooms__item__list">Цена за сутки: 200₽</li>
-						</ul>
-						<button class="rooms__btn btn" type="button">Забронировать</button>
-					</div>
+				<div class="rooms__controls">
+					<button class="controls previous" id="previous"></button>
+					<button class="controls" id="pause">Pause</button>
+					<button class="controls next" id="next">Next</button>
 				</div>
 
 			</div>
@@ -129,7 +137,8 @@
 	</main>
 
 
-	
+	<script src="js/script.js">
+	</script>
 </body>
 
 </html>
